@@ -1,0 +1,446 @@
+
+/*----------------------
+
+Style For Website 2
+
+----------------------- */
+
+
+/*-------------
+ import font
+ ------------- */
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+/* ------------
+header section 
+-------------- */
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+header{
+    display: flex; 
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.header-container{
+    display: flex;
+    justify-content: center;
+}
+.header-section{
+    background-color: #161616;
+    width:90%;
+    height:456px;
+    border-radius: 30px;
+    display: flex;
+}
+.container{
+    width:50%;
+    margin-left:70px;
+    margin-top:70px;
+}
+.container{
+    width:50%;
+    margin-left:70px;
+    margin-top:70px;
+}
+.container a:hover{
+    border-radius: 30px 10px;
+    transition: all 2s; 
+    display: inline-block;   
+    transform: scale(1.5,1.5);
+    background-color: #b10202b2;
+}
+.container p{
+    color:#FFFFFF;
+    font-size:13px;
+    margin-bottom:20px;
+}
+/* -------------
+ header paragraph animation
+ ---------------- */
+.container p:hover{
+    transform: rotateX(360deg);
+    transition: all 2s .4s;
+}
+.header-tittle{
+    color:#FFFFFF;
+    font-size:50px;
+}
+.header-tittle:hover{
+    transition: font-size 2s .5s;
+    font-size: 55px;
+}
+.watch-button{
+    text-decoration: none;
+    background-color: #DD0000;
+    padding:5px 10px;
+    color:#FFFFFF;
+    border-radius: 5px;
+}
+.banner{
+    width:50%;
+}
+.banner img{
+    width:100%;
+    margin-top:15px;
+    
+}
+.banner img:hover{
+    transform: scale(1.09,1.09);
+    transition: transform 2s 0.5s;
+}
+/*------------
+ header end 
+ ------------ */
+
+ /* -----------
+  main start
+  ------------- */
+.main-section{
+    display: flex;
+    justify-content: center;
+}
+.menu-container{
+    background-color:#161616;
+    width:20%;
+    height:220px;
+    border-radius: 5px;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.side-menu{
+    text-decoration:none;
+    background-color: aliceblue;
+    color:#161616;
+    width: 80%;
+    padding:7px 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+#different-menu-item{
+    background-color: #DD0000;
+    color:#FFFFFF;
+}
+/*-------------
+ Match Fixtures
+ ------------- */
+.fixtures{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap:23px;
+    grid-column-gap:15px; ;
+    margin-left: 15px;    
+}
+.match-details{
+    border: 1px solid rgb(236, 236, 236);
+    border-radius: 5px;
+    width: 200px;
+    height:150px;
+}
+.match-between{
+    display: table;
+    justify-content: center;
+    margin: 10px;
+}
+.match-between img{
+    display: table-cell;
+    vertical-align: middle;
+    margin: 10px;
+    width:60px;
+}
+.match-between h3{
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 10px;
+}
+.match-time h3{
+    font-size: 15px;
+    text-align: center;
+}
+.match-time p{
+    font-size: 10px;
+    color:#969696;
+    text-align: center;
+}
+.hidden-button-container{
+    display:none;
+}
+.hidden-button-container a{
+    text-decoration: none;
+    background-color: #DD0000;
+    color: #FFFFFF;
+    margin: 10px;
+    padding:7px 13px;
+    border-radius: 5px;
+}
+/*----------------
+ main end
+ ------------ */
+/*------------------
+ footer section start 
+ ------------------- */
+footer{
+    margin-top: 50px;
+    background-color: #161616;
+}
+.footer-section{    
+    height:350px;
+    color:#B9B9B9;
+    display: flex;
+    justify-content: center;
+    margin:0;
+}
+
+.footer-tittle{
+    margin-top:50px;
+    text-align: center;
+    color:#FFFFFF;
+}
+hr{
+    border:0.3px solid #FFFFFF;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+.footer-menu a{
+    text-decoration: none;
+    color:#B9B9B9;
+    margin-left:20px;
+    font-size: 10px;
+}
+.footer-bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.icon a{
+    margin-right: 30px;
+    margin-left: 20px;
+    font-size: 30px;
+}
+.fa-facebook-square{
+    color:#3b5998;
+}
+.fa-linkedin{
+    color:#0072b1;
+}
+.fa-youtube{
+    color:#FF0000;
+}
+
+/* ---------------- 
+footer section end
+------------------- */
+
+
+/* ---------------
+ media query 
+ ---------------- */
+
+ /* -------------------------
+ media query for small device
+ ----------------------------- */
+@media only screen and (max-width:576px){
+    body{
+        margin: 0;
+    }
+    header{
+        margin-bottom: 24px;
+        margin-right: 12px;
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;        
+    }
+    .header-container{
+        display: flex;
+        justify-content: center;
+    }
+    .header-section{
+        width:90%;
+        height: 370px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-tittle{
+        color:#FFFFFF;
+        font-size:20px;
+    } 
+    .container{
+        width:50%;
+        margin-top:0;
+        text-align: center;
+        margin-left: 0;
+    }
+    .container p{
+        font-size: 8px;
+    }
+    .banner img{
+        width:85%;
+        margin-top:30px;
+    }
+
+    /* main section */
+
+    .menu-container{
+        background-color:transparent;
+        width:60%;
+        height:220px;
+    }
+    .main-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } 
+    .fixtures{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+            
+    }
+    .match-details{
+        border: 1px solid rgb(236, 236, 236);
+        border-radius: 5px;
+        width: 300px;
+        height:220px;
+    }
+    .match-between{
+        display: table;
+        justify-content: center;
+        margin: 10px;
+    }
+    .match-between img{
+        display: table-cell;
+        vertical-align: middle;
+        margin: 10px;
+        width:110px;
+    }
+    .match-between h3{
+        font-size: 10px;
+    }
+    .match-time h3{
+        font-size: 20px;
+    }
+    .match-time p{
+        font-size: 20px;
+    } 
+    footer{
+        width: 100%;
+    } 
+    .footer-section{
+        height: 650px;
+    }
+    .footer-menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .footer-menu a{
+        margin-bottom: 30px;
+        margin-left: 0px;
+    }
+    .icon{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .icon a{
+        font-size: 20px;
+        margin-bottom: 10px;
+        
+    }
+}
+
+/* -------------------------
+meadia query of medium device
+------------------------------ */
+
+@media only screen and (min-width:567px) and (max-width:768px) {
+    .header-tittle{
+        font-size: 40px;
+    }
+    .header-section{
+        width:90%;
+        height: 370px;
+        border-radius: 15px;
+    }
+    .container{
+        width:50%;
+        margin-left:40px;
+        margin-top:40px;
+    }
+    .banner img{
+        width:100%;
+        margin-top:30px;
+        
+    }
+    .main-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu-container{
+        background-color:transparent;
+        width:90%;
+        height: 100px;
+        border-radius: 5px;    
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-content: space-evenly;
+    }
+    .side-menu{
+        width:190px;
+        
+    } 
+
+    .fixtures{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+            
+    }
+    .match-details{
+        border-radius: 5px;
+        width: 320px;
+        height:250px;
+    }
+    .match-between{
+        display: table;
+        justify-content: center;
+        margin: 20px;
+    }
+    .match-between img{
+        margin: 10px;
+        width:120px;
+    }
+    .match-between h3{
+        font-size: 20px;
+    }
+    .match-time h3{
+        font-size: 25px;
+        text-align: center;
+    }
+    .match-time p{
+        font-size: 20px;
+    }  
+    
+    .hidden-button-container{
+        display: block;
+    }
+    .footer-menu{
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer-menu a{
+        font-size: 15px;
+        margin-left: 30px;
+        margin-bottom: 15px;
+    }
+    
+}
